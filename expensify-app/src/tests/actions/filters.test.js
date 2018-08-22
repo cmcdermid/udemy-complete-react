@@ -36,14 +36,12 @@ test('should generate set text filter with empty value action object', ()=> {
 
 test('should generate sort by date filter', () => {
     expect(sortByDate()).toEqual({
-        type: 'SORT_BY_VALUE',
-        sortBy: 'date'
+        type: 'SORT_BY_DATE'
     });
 });
 
 test('should generate sort by amount filter', () => {
     expect(sortByAmount()).toEqual({
-        type: 'SORT_BY_VALUE',
-        sortBy: 'amount'
+        type: 'SORT_BY_AMOUNT'
     });
 });
